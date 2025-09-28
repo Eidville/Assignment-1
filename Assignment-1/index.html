@@ -3,74 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Fassell - The Soccer Missionaries | Official Website</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Official website of FC Fassell, the Soccer Missionaries. Professional football club based in Monrovia, Liberia.">
 </head>
-<body class="fadeIn">
+<body>
+    <!-- Header / Navigation -->
     <header class="header">
-        <div class="logo">
-            <img src="./img/logo.jpg" alt="FC Fassel-.logo" width="400">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/logo.jpg" alt="FC Fassell Logo">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-       
-        <nav class="navbar">
-            <ul class="nav-link">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    <div class="hero glow">
-         <h1>Welcome to FC Fassel Official Website</h1>
-    </div>
 
-    <div>
-        <h2 class="line top">Introduction</h2>
-        <section class="fadeUp">
-            
-            <p>FC is a professional football club base in Liberia, known for its passionate players and contribution to the development of Liberian footbll. Founded in 2009, Football Club Fassell, commonly known as FC Fassell, has rapidly ascended the ranks of Liberian football, earning the nickname "The Soccer Missionaries" for their dedication to the sport and their mission to elevate the standard of football in Liberia. Based in Monrovia, FC Fassell has become a beacon of ambition and excellence, with a growing reputation both domestically and on the African continent.</p>
-            <img src="./img/ast.jpg" alt="">
-           
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1>Welcome to FC Fassell</h1>
+                <p>The Soccer Missionaries | Professional Football Club</p>
+                <a href="#highlights" class="btn">Discover Our Story</a>
+                <a href="./about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-        <section >
-            <h2 class="center">Hightlight</h2>
-            <ul class="list">
-                <li>Founded: 2008</li>
-                <li>Nickname: "Soccer Missionaries</li>
-                <li>Played in the Liberian First Division</li>
-            </ul>
-        </section>
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <h2>About FC Fassell</h2>
+                    <p>Founded in 2009, FC Fassell is a professional football club based in Monrovia, Liberia. Known as "The Soccer Missionaries", we are recognized for our dedication to excellence, young talent development, and rapid ascent in Liberian football.</p>
+                    <p>Our commitment extends beyond the pitch, as we strive to inspire and develop the next generation of Liberian football stars while contributing to the growth of the sport in our community.</p>
+                    <a href="./about.html" class="btn">Read Our Full Story</a>
+                </div>
+                <div class="intro-image">
+                    <img src="./img/ast.jpg" alt="FC Fassell Team">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-        <h2 class="center">Featured Video</h2>
-        <iframe width="656" height="369" src="https://www.youtube.com/embed/C9QDjq0-qxk" title="FC FASSELL 2️⃣-1️⃣ BLACKMAN WARRIOR | 24/25 FIRST DIVISION LEAGUE HIGHLIGHTS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+    <!-- Highlights Section -->
+    <section id="highlights" class="highlights">
+        <div class="container">
+            <div class="section-title">
+                <h2>Club Highlights</h2>
+                <p>Key facts and achievements that define FC Fassell</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card fade-in-up">
+                    <h3>Founded</h3>
+                    <p>2009</p>
+                </div>
+                <div class="card fade-in-up">
+                    <h3>Nickname</h3>
+                    <p>Soccer Missionaries</p>
+                </div>
+                <div class="card fade-in-up">
+                    <h3>League</h3>
+                    <p>Liberian First Division</p>
+                </div>
+                <div class="card fade-in-up">
+                    <h3>Home Stadium</h3>
+                    <p>Antoinette Tubman Stadium</p>
+                </div>
+                <div class="card fade-in-up">
+                    <h3>Location</h3>
+                    <p>Monrovia, Liberia</p>
+                </div>
+                <div class="card fade-in-up">
+                    <h3>Major Trophy</h3>
+                    <p>2014 Liberian Cup</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <article class="alt-video ">
-            <h2 class="center">Alternative video</h2>
-            <video src="./video/FC_FASSELL_2️⃣-1️⃣_BLACKMAN_WARRIOR___24_25_FIRST_DIVISION_LEAGUE_HIGHLIGHTS(720p).mp4" controls width="400"></video>
-        </article>
+    <!-- Media Section -->
+    <section class="media">
+        <div class="container">
+            <div class="section-title">
+                <h2>Match Highlights</h2>
+                <p>Watch our latest matches and memorable moments</p>
+            </div>
+            <div class="media-grid">
+                <iframe 
+                    src="https://www.youtube.com/embed/C9QDjq0-qxk" 
+                    frameborder="0" 
+                    allowfullscreen
+                    title="FC Fassell Match Highlights">
+                </iframe>
+                <video 
+                    src="./video/FC_FASSELL_2️⃣-1️⃣_BLACKMAN_WARRIOR___24_25_FIRST_DIVISION_LEAGUE_HIGHLIGHTS(720p).mp4" 
+                    controls
+                    title="FC Fassell vs Blackman Warrior Highlights">
+                </video>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2 class="center">Team Anthem</h2>
+    <!-- Team Anthem -->
+    <section class="anthem">
+        <div class="container">
+            <div class="section-title">
+                <h2>Team Anthem</h2>
+                <p>Listen to the official FC Fassell anthem</p>
+            </div>
             <audio controls>
-               <source src="./audio/anthem.mp3" type="">
-               Your browser does not support the audio element.
+                <source src="./audio/anthem.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <aside class="sidebar">
-        <h3>Quick Facts</h3>
-        <p>Next match: oct 20, 2025</p>
-        <p>Opponent: LPRC Oilers</p>
-        <p>Stadium: Antoinette Tubman Stadium, Monrovia</p>
-    </aside>
-    <footer class="footer-section">
-        <a href="#">Top</a>
-        <p>&copy; 2025 FC Fassell | All Rights Reserved</p>
+    <!-- Quick Facts Sidebar -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="sidebar">
+                <h3>Upcoming Match</h3>
+                <div class="match-info">
+                    <p><strong>Date:</strong> October 20, 2025</p>
+                    <p><strong>Opponent:</strong> LPRC Oilers</p>
+                    <p><strong>Venue:</strong> Antoinette Tubman Stadium, Monrovia</p>
+                    <p><strong>Time:</strong> 3:00 PM GMT</p>
+                </div>
+                <a href="./contact.html" class="btn mt-2">Get Tickets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 FC Fassell | All Rights Reserved</p>
+                    <p>The Soccer Missionaries - Inspiring Excellence</p>
+                </div>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
+    <script>
+        // Simple scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

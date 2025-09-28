@@ -3,61 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact FC Fassell - Get in Touch</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Contact FC Fassell - Get in touch with the Soccer Missionaries. Send us a message, follow us on social media, or visit our office in Monrovia.">
 </head>
 <body>
+    <!-- Header / Navigation -->
     <header class="header">
-        <div class="logo">
-            <img src="./img/logo.jpg" alt="FC Fassel-.logo" width="400">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/logo.jpg" alt="FC Fassell Logo">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      
-        <nav class="navbar">
-            <ul class="nav-link">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section>
-            <form class="contact-form">
-            <label for="name">name</label><br>
-            <input type="text" placeholder="Enter your name"><br>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with the Soccer Missionaries - We'd love to hear from you</p>
+        </div>
+    </section>
 
-            <label for="email">Email</label><br>
-            <input type="email" placeholder="Enter your email"><br>
+    <!-- Main Contact Section -->
+    <main class="container">
+        <section class="contact-section">
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <p class="mb-3">Have a question, suggestion, or want to get involved? We're here to help and would love to connect with you.</p>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
 
-            <label for="message">Message</label><br>
-            <textarea placeholder="Please give us feedback" name="message" rows="5"></textarea>
-            <button type="submit" class="btn">Send</button>
-            </form>
-        </section>
-        <article class="social">
-            <h2>Follow us</h2>
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href=""></a></li>
-            </ul>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, veritatis! Perferendis minus dicta quaerat aperiam debitis. Autem neque minima tenetur dignissimos harum aliquid dolore error laudantium nostrum similique! Tenetur, accusantium?</p>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please share your message, feedback, or inquiry with us..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
-        </article>
-    </main>
-    <aside>
-        <h3>Club Office</h3>
-        <p>Broad Street, Monrovia, Liberia</p>
-        <p><a href="mato">Email: info@fcfassell.com</a></p>
-        <p>>Phone: +231 77 654 3210</p>
 
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p class="mb-3">Connect with FC Fassell through multiple channels. We're always excited to hear from our fans, partners, and the community.</p>
+
+                <div class="contact-info-item">
+                    <h4>Club Office</h4>
+                    <p>Broad Street<br>
+                    Monrovia, Liberia</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:info@fcfassell.com" style="color: var(--primary-color); text-decoration: none;">info@fcfassell.com</a></p>
+                    <p><a href="mailto:media@fcfassell.com" style="color: var(--primary-color); text-decoration: none;">media@fcfassell.com</a></p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h4>Phone</h4>
+                    <p>+231 77 654 3210</p>
+                    <p>+231 88 123 4567</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                    Saturday: 10:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h4>Follow Us</h4>
+                    <div class="socials" style="justify-content: flex-start; margin-top: 1rem;">
+                        <a href="#" style="background: var(--primary-color); color: white; padding: 0.5rem 1rem; border-radius: var(--border-radius); text-decoration: none; margin-right: 0.5rem;">Facebook</a>
+                        <a href="#" style="background: var(--accent-color); color: white; padding: 0.5rem 1rem; border-radius: var(--border-radius); text-decoration: none; margin-right: 0.5rem;">Instagram</a>
+                        <a href="#" style="background: #ff0000; color: white; padding: 0.5rem 1rem; border-radius: var(--border-radius); text-decoration: none; margin-right: 0.5rem;">YouTube</a>
+                        <a href="#" style="background: #1da1f2; color: white; padding: 0.5rem 1rem; border-radius: var(--border-radius); text-decoration: none;">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="mt-4">
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Media Inquiries</h3>
+                    <p>For press releases, interviews, and media-related questions, please contact our media team at media@fcfassell.com</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Partnership Opportunities</h3>
+                    <p>Interested in partnering with FC Fassell? We welcome sponsorship and collaboration opportunities that align with our values.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Youth Academy</h3>
+                    <p>Learn about our youth development programs and how young players can join the Soccer Missionaries family.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Match Tickets</h3>
+                    <p>Get information about upcoming matches, ticket availability, and season passes for FC Fassell home games.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Quick Info Sidebar -->
+    <aside class="container">
+        <div class="sidebar">
+            <h3>Quick Information</h3>
+            <div style="margin-bottom: 1rem;">
+                <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Next Home Match</h4>
+                <p style="margin-bottom: 0.5rem;"><strong>Date:</strong> October 20, 2025</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Opponent:</strong> LPRC Oilers</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Venue:</strong> Antoinette Tubman Stadium</p>
+                <p><strong>Kickoff:</strong> 3:00 PM GMT</p>
+            </div>
+            <a href="#" class="btn" style="display: inline-block; margin-top: 1rem;">Get Tickets</a>
+        </div>
     </aside>
-    <footer class="footer-section">
-        <a href="#">Top</a>
-          <p>&copy; 2025 FC Fassell | All Rights Reserved</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 FC Fassell | All Rights Reserved</p>
+                    <p>The Soccer Missionaries - Inspiring Excellence</p>
+                </div>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        });
+
+        // Simple scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards
+        document.querySelectorAll('.card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>
